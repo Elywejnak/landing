@@ -5,6 +5,7 @@ import { X, Menu } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { paperClipLogo, paperclipLogoSmall } from '@/utils/assets';
+import { navLinks } from '@/constants/data';
 
 export default function NavbarMobile() {
   const [isOpen, setIsOpen] = useState(false);
@@ -62,21 +63,18 @@ export default function NavbarMobile() {
 
             {/* Menu Options */}
             <div className='mt-4 text-lg space-y-2'>
-              <Link href={'/'} target='_blank' className='leading-[36px]'>
-                <p className='text-black text-left font-semibold font-poppins text-[24px] '>
-                  Contact Us
-                </p>
-              </Link>
-              <Link href={'/'} target='_blank' className='leading-[36px]'>
-                <p className='text-black text-left font-semibold font-poppins text-[24px]'>
-                  Terms
-                </p>
-              </Link>
-              <Link href={'/'} target='_blank' className='leading-[36px]'>
-                <p className='text-black text-left font-semibold font-poppins text-[24px]'>
-                  Privacy
-                </p>
-              </Link>
+              {navLinks.map((navLink) => (
+                <Link
+                  key={navLink.title}
+                  href={navLink.path}
+                  target='_blank'
+                  className='leading-[36px]'
+                >
+                  <p className='text-black text-left font-semibold font-poppins text-[24px] '>
+                    {navLink.title}
+                  </p>
+                </Link>
+              ))}
               <Link
                 onClick={() => setIsOpen(false)}
                 href={'/get-started'}

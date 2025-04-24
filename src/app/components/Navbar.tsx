@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { paperclipLogoSmall } from '@/utils/assets';
 import Link from 'next/link';
+import { navLinks } from '@/constants/data';
 
 export default function Navbar({ customStyle }: { customStyle?: string }) {
   return (
@@ -23,15 +24,16 @@ export default function Navbar({ customStyle }: { customStyle?: string }) {
 
       {/* Navigation Links */}
       <div className='flex items-center space-x-1 mx-2 md:mx-6 font-poppins font-bold text-[14px] leading-[16px] text-gray-700'>
-        <Link href={'/'} target='_blank' className='px-2'>
-          Contact Us
-        </Link>
-        <Link href={'/'} target='_blank' className='px-2'>
-          Terms
-        </Link>
-        <Link href={'/'} target='_blank' className='px-2'>
-          Privacy
-        </Link>
+        {navLinks.map((navLink) => (
+          <Link
+            key={navLink.title}
+            href={navLink.path}
+            target='_blank'
+            className='px-2'
+          >
+            {navLink.title}
+          </Link>
+        ))}
       </div>
 
       {/* Pro Badge */}
