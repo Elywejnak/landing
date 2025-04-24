@@ -19,7 +19,6 @@ import {
   iZettle,
   alignedIncentives,
 } from '@/utils/assets';
-import ProfessionalToolCardTwo from '../components/ProfessionalToolCardTwo';
 import LiveDemoCard from '../components/LiveDemoCard';
 import SellingEffortlesslyCard from '../components/SellingEffortlessCard';
 import Navbar from '../components/Navbar';
@@ -29,7 +28,6 @@ import {
   carouselContentTwo,
   carouselStepsTwo,
 } from '@/constants/carouselContent';
-import ScrollingCarousel from '../components/ScrollingCarousel';
 import LaunchPartnerOffer from '../components/LaunchPartnerOfferCard';
 import NavbarMobile from '../components/NavbarMobile';
 import { InfiniteMovingCardsDemo } from '../components/InfiniteMovingCards';
@@ -91,17 +89,17 @@ const GetStarted = () => {
       </section>
 
       {/* 3D Hover Card */}
-      <div className='hidden xl:block relative flex items-center justify-center'>
+      <div className='xl:block relative flex items-center justify-center'>
         {/* Floating Background Layer */}
         <div className="absolute inset-0 bg-[url('/backshadow.png')] bg-top bg-cover pointer-events-none h-[100%] -top-[40%]"></div>
         <div className='relative w-full'>
-          <div className='w-full mx-auto w-[75%] max-w-7xl h-64 absolute top-14 left-1/2 transform -translate-x-1/2 bg-[#F7F5F3] rounded-[24px] border border-white/40 shadow-[0px_10px_50px_rgba(0,0,0,0.24)] opacity-40 backdrop-blur-xl'></div>
+          <div className='mx-auto w-[75%] max-w-7xl h-64 absolute top-14 left-1/2 transform -translate-x-1/2 bg-[#F7F5F3] rounded-[24px] border border-white/40 shadow-[0px_10px_50px_rgba(0,0,0,0.24)] opacity-40 backdrop-blur-xl'></div>
           <DashboardCard />
         </div>
       </div>
 
       {/* Launch Partner Offer Section */}
-      <div className='block mt-[72px] xl:my-[176px] grid grid-cols-1 gap-10 mx-auto px-[24px] xl:px-10'>
+      <div className='mt-[72px] xl:my-[176px] grid grid-cols-1 gap-10 mx-auto px-[24px] xl:px-10'>
         <LaunchPartnerOffer />
       </div>
 
@@ -178,7 +176,7 @@ const GetStarted = () => {
           />
         </div>
 
-        <div className='pb-10 grid grid-cols-1 gap-10 mx-auto hidden md:block xl:px-10'>
+        <div className='pb-10 grid-cols-1 gap-10 mx-auto hidden md:block xl:px-10'>
           <ProfessionalToolCard
             title={<span>POS</span>}
             description={
@@ -304,7 +302,7 @@ const GetStarted = () => {
         </div>
       </div>
 
-      <div className='px-[24px] xl:px-10 pb-10 grid grid-cols-1 gap-10 mx-auto block md:hidden'>
+      <div className='px-[24px] xl:px-10 pb-10 grid-cols-1 gap-10 mx-auto block md:hidden'>
         <ProfessionalToolCard
           image={pos}
           imgWidth={230}
@@ -412,7 +410,7 @@ const GetStarted = () => {
 
       {/* Desktop */}
       <div className='hidden xl:block'>
-        <div className='px-10 xl:px-10 pb-10 grid grid-cols-2 grid-cols-[60%_40%] gap-10 mx-auto'>
+        <div className='px-10 xl:px-10 pb-10 grid grid-cols-[60%_40%] gap-10 mx-auto'>
           <LiveDemoCard />
           <SellingEffortlesslyCard />
         </div>
@@ -452,8 +450,8 @@ const GetStarted = () => {
       {/* Footer Section */}
       {/* Referral Section */}
       <div className='bg-white py-[72px] xl:py-10 text-center rounded-t-[56px] z-0 w-screen'>
-        <div className='my-10 md:my-20 xl:my-[132px] w-[94%] md:w-[90%] xl:w-[94%] mx-auto mx-auto'>
-          <div className='w-[92%] md:w-[90%] md:w-full mx-auto relative md:col-span-2 md:h-[344px] bg-gradient-to-l from-[#FC9CA8] to-[#FFF2F3] p-6 rounded-[32px] shadow-lg flex flex-col md:flex-row md:justify-between items-center text-left'>
+        <div className='my-10 md:my-20 xl:my-[132px] w-[94%] md:w-[90%] xl:w-[94%] mx-auto'>
+          <div className='w-[92%] md:w-full mx-auto relative md:col-span-2 md:h-[344px] bg-gradient-to-l from-[#FC9CA8] to-[#FFF2F3] p-6 rounded-[32px] shadow-lg flex flex-col md:flex-row md:justify-between items-center text-left'>
             <div className='h-[80%] md:w-[50%] xl:w-[40%] flex flex-col justify-between md:ml-6'>
               <div>
                 <h4 className='text-[32px] font-[600] xl:text-[40px] leading-[40px] xl:leading-[56px] font-poppins'>
@@ -496,7 +494,10 @@ const GetStarted = () => {
       {/* Footer Section */}
       <div className='w-full pb-20 xl:pb-40 relative'>
         <div className='hidden md:block'>
-          <Navbar customStyle='w-[361px] md:w-[464px]' />
+          <Navbar
+            showNavLinks={true}
+            customStyle='w-[361px] 3xl-custom:w-[600px] md:w-[564px]'
+          />
         </div>
 
         <div className='block md:hidden'>

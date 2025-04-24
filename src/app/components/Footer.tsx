@@ -186,7 +186,10 @@ export default function FooterSection() {
         </div>
 
         <div className='hidden md:block'>
-          <Navbar customStyle='w-[361px] 3xl-custom:w-[600px] md:w-[564px]' />
+          <Navbar
+            showNavLinks={true}
+            customStyle='w-[361px] 3xl-custom:w-[600px] md:w-[564px]'
+          />
         </div>
 
         <div className='block md:hidden'>
