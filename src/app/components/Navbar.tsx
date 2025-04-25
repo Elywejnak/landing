@@ -3,7 +3,13 @@ import { paperclipLogoSmall } from '@/utils/assets';
 import Link from 'next/link';
 import { navLinks } from '@/constants/data';
 
-export default function Navbar({ customStyle }: { customStyle?: string }) {
+export default function Navbar({
+  customStyle,
+  showNavLinks,
+}: {
+  customStyle?: string;
+  showNavLinks: boolean;
+}) {
   return (
     <nav
       className={`flex items-center justify-between px-3 3xl-custom:py-4 py-2 shadow-soft bg-white rounded-[100px] z-50 mx-auto ${
@@ -24,16 +30,17 @@ export default function Navbar({ customStyle }: { customStyle?: string }) {
 
       {/* Navigation Links */}
       <div className='flex items-center space-x-1 mx-2 md:mx-6 font-poppins font-bold text-[14px] leading-[16px] text-gray-700'>
-        {navLinks.map((navLink) => (
-          <Link
-            key={navLink.title}
-            href={navLink.path}
-            target='_blank'
-            className='px-2'
-          >
-            {navLink.title}
-          </Link>
-        ))}
+        {showNavLinks &&
+          navLinks.map((navLink) => (
+            <Link
+              key={navLink.title}
+              href={navLink.path}
+              target='_blank'
+              className='px-2'
+            >
+              {navLink.title}
+            </Link>
+          ))}
       </div>
 
       {/* Pro Badge */}
