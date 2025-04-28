@@ -37,7 +37,7 @@ export default function RootLayout({
       >
         <div className='hidden md:block'>
           <Navbar
-            showNavLinks={true}
+            showNavLinks={false}
             customStyle='w-[361px] 3xl-custom:w-[600px] md:w-[564px] absolute top-10 left-1/2 transform -translate-x-1/2'
           />
         </div>
