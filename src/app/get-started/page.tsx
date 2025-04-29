@@ -32,6 +32,7 @@ import LaunchPartnerOffer from '../components/LaunchPartnerOfferCard';
 import NavbarMobile from '../components/NavbarMobile';
 import { InfiniteMovingCardsDemo } from '../components/InfiniteMovingCards';
 import { motion, useInView } from 'framer-motion';
+import Link from 'next/link';
 
 const GetStarted = () => {
   const toolsSectionRef = useRef(null);
@@ -74,7 +75,15 @@ const GetStarted = () => {
         </p>
 
         <button className='mb-[92px] max-w-[320px] mt-10 bg-gradient-to-l from-[#F71D3B] to-[#E14DE3] text-white py-3 px-6 rounded-[100px] font-[600] font-poppins text-[16px] md:text-[24px] leading-[24px] md:leading-[36px] xl:w-[30%]'>
-          Signup now for Free!
+          <Link
+            href={
+              'https://apps.apple.com/gb/app/paperclip-ai-marketplace/id990240447'
+            }
+            target='_blank'
+            className='w-full'
+          >
+            Signup now for Free!
+          </Link>
         </button>
 
         {/* Navbar Bg Shadow */}
@@ -368,10 +377,16 @@ const GetStarted = () => {
         <p className='text-[#706363] font-[400px] text-[16px] md:text-[20px] leading-[24px] md:leading-[28px] mt-4 md:mt-8 font-poppins max-w-7xl mx-auto'>
           Everything You Need to Run Your Store, 100% Free
         </p>
-
-        <button className='max-w-[353px] mt-8 md:mt-12 bg-gradient-to-l from-[#F71D3B] to-[#E14DE3] text-white py-3 px-6 rounded-[100px] font-[600] font-poppins text-[16px] md:text-[24px] leading-[24px] md:leading-[36px] xl:w-[30%]'>
-          Get started in minutes!
-        </button>
+        <Link
+          href={
+            'https://apps.apple.com/gb/app/paperclip-ai-marketplace/id990240447'
+          }
+          target='_blank'
+        >
+          <button className='max-w-[353px] mt-8 md:mt-12 bg-gradient-to-l from-[#F71D3B] to-[#E14DE3] text-white py-3 px-6 rounded-[100px] font-[600] font-poppins text-[16px] md:text-[24px] leading-[24px] md:leading-[36px] xl:w-[30%]'>
+            Get started in minutes!
+          </button>
+        </Link>
       </motion.div>
 
       <div className='px-[24px] md:px-10'>
@@ -438,10 +453,16 @@ const GetStarted = () => {
             shipping, and a massive online marketplace to boost sales—at zero
             cost to you.
           </p>
-
-          <button className='max-w-[320px] mt-12 bg-gradient-to-l from-[#F71D3B] to-[#E14DE3] text-white py-3 px-6 rounded-[100px] font-[600] font-poppins text-[24px] leading-[36px] w-[30%]'>
-            Signup now for Free!
-          </button>
+          <Link
+            href={
+              'https://apps.apple.com/gb/app/paperclip-ai-marketplace/id990240447'
+            }
+            target='_blank'
+          >
+            <button className='max-w-[320px] mt-12 bg-gradient-to-l from-[#F71D3B] to-[#E14DE3] text-white py-3 px-6 rounded-[100px] font-[600] font-poppins text-[24px] leading-[36px] w-[30%]'>
+              Signup now for Free!
+            </button>
+          </Link>
         </section>
 
         <InfiniteMovingCardsDemo />
@@ -462,10 +483,16 @@ const GetStarted = () => {
                   We’ll pay you 1% of everything your friends make!
                 </p>
               </div>
-
-              <button className='mt-4 max-w-[405px] bg-white text-[#F71D3B] py-2 px-6 rounded-[100px] font-[600] font-poppins text-[16px] leading-[16px] xl:text-[24px] xl:leading-[36px]'>
-                Refer your friends today! →
-              </button>
+              <Link
+                href={
+                  'https://apps.apple.com/gb/app/paperclip-ai-marketplace/id990240447'
+                }
+                target='_blank'
+              >
+                <button className='mt-4 max-w-[405px] bg-white text-[#F71D3B] py-2 px-6 rounded-[100px] font-[600] font-poppins text-[16px] leading-[16px] xl:text-[24px] xl:leading-[36px]'>
+                  Refer your friends today! →
+                </button>
+              </Link>
             </div>
 
             {/* Desktop */}

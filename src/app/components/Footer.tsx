@@ -25,6 +25,7 @@ import NavbarMobile from './NavbarMobile';
 import { useEffect, useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 import AiTryOnSection from './AiTryOnSection';
+import Link from 'next/link';
 
 export default function FooterSection() {
   const [centerVideoPlayed, setCenterVideoPlayed] = useState(false);
@@ -129,10 +130,16 @@ export default function FooterSection() {
                   We’ll pay you 1% of everything your friends make!
                 </p>
               </div>
-
-              <button className='max-w-[405px] mt-4 bg-white text-[#F71D3B] py-[12px] xl:py-2 px-6 rounded-[100px] font-[600] font-poppins text-[16px] leading-[16px] xl:text-[24px] xl:leading-[36px]'>
-                Refer your friends today! →
-              </button>
+              <Link
+                href={
+                  'https://apps.apple.com/gb/app/paperclip-ai-marketplace/id990240447'
+                }
+                target='_blank'
+              >
+                <button className='max-w-[405px] mt-4 bg-white text-[#F71D3B] py-[12px] xl:py-2 px-6 rounded-[100px] font-[600] font-poppins text-[16px] leading-[16px] xl:text-[24px] xl:leading-[36px]'>
+                  Refer your friends today! →
+                </button>
+              </Link>
             </div>
 
             {/* Desktop */}

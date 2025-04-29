@@ -12,6 +12,7 @@ import {
   b3,
 } from '@/utils/assets';
 import { mobileThree, cart, arrowThree, wow } from '@/utils/assets';
+import Link from 'next/link';
 
 const HomeCardsGrid = () => {
   return (
@@ -31,10 +32,16 @@ const HomeCardsGrid = () => {
               stuff that suits your taste. No more endless scrolling.
             </p>
           </div>
-
-          <button className='relative z-10 max-w-[100%] xl:max-w-[425px] mt-4 bg-white text-[#F71D3B] py-[12px] xl:py-2 px-5 xl:px-6 rounded-[100px] font-[600] text-[16px] xl:text-[24px] leading-[16px] xl:leading-[36px]'>
-            Browse Personalized Finds →
-          </button>
+          <Link
+            href={
+              'https://apps.apple.com/gb/app/paperclip-ai-marketplace/id990240447'
+            }
+            target='_blank'
+          >
+            <button className='relative z-10 max-w-[100%] xl:max-w-[425px] mt-4 bg-white text-[#F71D3B] py-[12px] xl:py-2 px-5 xl:px-6 rounded-[100px] font-[600] text-[16px] xl:text-[24px] leading-[16px] xl:leading-[36px]'>
+              Browse Personalized Finds →
+            </button>
+          </Link>
         </div>
 
         {/* Mobile */}
@@ -100,9 +107,16 @@ const HomeCardsGrid = () => {
             Wonder if that hat fits your vibe? Or if that coat matches your
             style? Our AI helps you see the fit before you buy
           </p>
-          <button className='max-w-[100%] xl:max-w-[209px] my-4 md:mt-10 xl:mt-20 w-full md:w-[60%] bg-white text-[#F71D3B] py-[12px] xl:py-2 px-6 rounded-[100px] font-[600] font-poppins text-[16px] xl:text-[24px] leading-[16px] xl:leading-[36px] w-[50%]'>
-            See it IRL →
-          </button>
+          <Link
+            href={
+              'https://apps.apple.com/gb/app/paperclip-ai-marketplace/id990240447'
+            }
+            target='_blank'
+          >
+            <button className='max-w-[100%] xl:max-w-[209px] my-4 md:mt-10 xl:mt-20 w-full md:w-[60%] bg-white text-[#F71D3B] py-[12px] xl:py-2 px-6 rounded-[100px] font-[600] font-poppins text-[16px] xl:text-[24px] leading-[16px] xl:leading-[36px] w-[50%]'>
+              See it IRL →
+            </button>
+          </Link>
 
           {/* Mobile */}
           <div className='block md:hidden z-1000 mt-10 mx-auto'>
@@ -162,10 +176,16 @@ const HomeCardsGrid = () => {
                 treasure is on its way, complete with real-time tracking
               </p>
             </div>
-
-            <button className='max-w-[100%] xl:max-w-[275px] my-10 xl:mt-20 bg-white text-[#F71D3B] py-[12px] xl:py-2 px-6 rounded-[100px] font-[600] font-poppins text-[16px] xl:text-[24px] leading-[16px] xl:leading-[36px] md:w-[80%] xl:w-[50%]'>
-              Get It Shipped →
-            </button>
+            <Link
+              href={
+                'https://apps.apple.com/gb/app/paperclip-ai-marketplace/id990240447'
+              }
+              target='_blank'
+            >
+              <button className='max-w-[100%] xl:max-w-[275px] my-10 xl:mt-20 bg-white text-[#F71D3B] py-[12px] xl:py-2 px-6 rounded-[100px] font-[600] font-poppins text-[16px] xl:text-[24px] leading-[16px] xl:leading-[36px] md:w-[80%] xl:w-[50%]'>
+                Get It Shipped →
+              </button>
+            </Link>
 
             <div className='absolute right-5 bottom-0 hidden xl:block'>
               <Image src={truck} alt='truckimage' width={254} height={260} />
@@ -186,10 +206,16 @@ const HomeCardsGrid = () => {
                 issues, or surprises.
               </p>
             </div>
-
-            <button className='max-w-[100%] xl:max-w-[275px] my-10 xl:mt-20 bg-white text-[#F71D3B] py-[12px] xl:py-2 px-6 rounded-[100px] font-[600] font-poppins text-[16px] xl:text-[24px] leading-[16px] xl:leading-[36px] md:w-[80%] xl:w-[50%]'>
-              Shop Securely →
-            </button>
+            <Link
+              href={
+                'https://apps.apple.com/gb/app/paperclip-ai-marketplace/id990240447'
+              }
+              target='_blank'
+            >
+              <button className='max-w-[100%] xl:max-w-[275px] my-10 xl:mt-20 bg-white text-[#F71D3B] py-[12px] xl:py-2 px-6 rounded-[100px] font-[600] font-poppins text-[16px] xl:text-[24px] leading-[16px] xl:leading-[36px] md:w-[80%] xl:w-[50%]'>
+                Shop Securely →
+              </button>
+            </Link>
 
             <div className='absolute right-5 bottom-0 hidden xl:block'>
               <Image src={shield} alt='truckimage' width={200} height={260} />

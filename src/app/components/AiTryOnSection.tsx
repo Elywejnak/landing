@@ -15,6 +15,7 @@ import {
   gif8,
   gif9,
 } from '@/utils/assets';
+import Link from 'next/link';
 
 const AiTryOnSection = () => {
   const images = [
@@ -59,26 +60,33 @@ const AiTryOnSection = () => {
             jackets look on you, minus the fitting-room queue.
           </p>
 
-          <button
-            className='inline-flex items-center bg-[#F71D3B] text-white  max-w-[320px] py-3 px-6 rounded-[100px] font-[600] font-poppins text-[16px] md:text-[24px] leading-[24px] md:leading-[36px]'
-            role='button'
+          <Link
+            href={
+              'https://apps.apple.com/gb/app/paperclip-ai-marketplace/id990240447'
+            }
+            target='_blank'
           >
-            Try It On, Right Now
-            <svg
-              className='w-[24px] ml-2 font-bold'
-              viewBox='0 0 24 24'
-              fill='none'
-              xmlns='http://www.w3.org/2000/svg'
+            <button
+              className='inline-flex items-center bg-[#F71D3B] text-white  max-w-[320px] py-3 px-6 rounded-[100px] font-[600] font-poppins text-[16px] md:text-[24px] leading-[24px] md:leading-[36px]'
+              role='button'
             >
-              <path
-                d='M5 12H19M19 12L12 5M19 12L12 19'
-                stroke='currentColor'
-                strokeWidth='2'
-                strokeLinecap='round'
-                strokeLinejoin='round'
-              />
-            </svg>
-          </button>
+              Try It On, Right Now
+              <svg
+                className='w-[24px] ml-2 font-bold'
+                viewBox='0 0 24 24'
+                fill='none'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                <path
+                  d='M5 12H19M19 12L12 5M19 12L12 19'
+                  stroke='currentColor'
+                  strokeWidth='2'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                />
+              </svg>
+            </button>
+          </Link>
         </div>
 
         {/* overlay */}

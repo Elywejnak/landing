@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import TestimonialCarousel from '@/components/ui/testimonial-carousel';
 import Image from 'next/image';
 import { HeroBg1, HeroBg2, HeroBg3, HeroBg4 } from '@/utils/assets';
+import Link from 'next/link';
 
 export default function Home() {
   const [hideImages, setHideImages] = useState(false);
@@ -151,24 +152,24 @@ export default function Home() {
                   exit={{ opacity: 0, y: 0 }}
                   className='mb-8 min-h-[160px] md:min-h-[352px] sm-custom:min-h-auto'
                 >
-                  <h1 className='text-4xl mt-10 pt-3 ml-2 md:text-5xl lg:text-[80px]  max-w-full 3xl-custom:text-[100px] 3xl-custom:max-w-[700px] lg-custom:max-w-[552px] font-poppins font-[600] mb-2 text-center lg-custom:text-left tracking-[-0.5px]'>
+                  <h1 className='text-4xl mt-10 pt-3 ml-2 md:text-5xl lg:text-[80px]  max-w-full 3xl-custom:text-[90px] 3xl-custom:max-w-[700px] lg-custom:max-w-[552px] font-poppins font-[600] mb-2 text-center lg-custom:text-left tracking-[-0.5px]'>
                     {headings[activeSection].main}
                   </h1>
-                  <h2 className='text-5xl md:text-6xl ml-2 lg:text-8xl 3xl-custom:text-9xl leading-tight lg:leading-[100px] font-playfair font-[800] italic text-[#F71D3B] text-center lg-custom:text-left'>
+                  <h2 className='text-5xl md:text-6xl ml-2 lg:text-8xl 3xl-custom:text-8xl leading-tight lg:leading-[100px] font-playfair font-[800] italic text-[#F71D3B] text-center lg-custom:text-left'>
                     {headings[activeSection].highlight}
                   </h2>
                 </motion.div>
               </AnimatePresence>
             </div>
 
-            <div className='mt-1 ml-[-15px]'>
+            <div className='mt-3 ml-[-15px]'>
               <TestimonialCarousel />
             </div>
           </div>
 
           {/* Video section */}
           <div className='w-full lg-custom:w-1/3 flex items-center justify-center pt-10 lg-custom:pt-0'>
-            <div className='relative w-full 3xl-custom:max-w-[500px] max-w-[300px] md:mb-5'>
+            <div className='relative w-full 3xl-custom:max-w-[320px] max-w-[300px] md:mb-5'>
               <div className='w-full h-full'>
                 <video
                   ref={videoRef}
@@ -183,10 +184,16 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-          <button className='block  sm:hidden md:hidden lg:hidden xl:hidden mt-12 bg-[#F71D3B] w-full max-w-[320px] text-white py-3 px-6 rounded-[100px] font-semibold text-[16px] leading-[24px] font-poppins m-auto sm-custom:mb-0 mb-3'>
-            Download App
-          </button>
+          <Link
+            href={
+              'https://apps.apple.com/gb/app/paperclip-ai-marketplace/id990240447'
+            }
+            target='_blank'
+          >
+            <button className='block  sm:hidden md:hidden lg:hidden xl:hidden mt-12 bg-[#F71D3B] w-full max-w-[320px] text-white py-3 px-6 rounded-[100px] font-semibold text-[16px] leading-[24px] font-poppins m-auto sm-custom:mb-0 mb-3'>
+              Download App
+            </button>
+          </Link>
         </section>
 
         {/* Side Animated Assets */}

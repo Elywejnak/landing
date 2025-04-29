@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import ProgressBar from './ProgressBar';
 import CarouselCard from './CarouselCard';
+import { Url } from 'url';
 
 export interface carouselContentProps {
   key?: number;
@@ -47,6 +48,7 @@ export interface carouselContentProps {
   c33?: boolean | null;
   c34?: boolean | null;
   c35?: boolean | null;
+  url: Url;
 }
 
 export interface Props {
@@ -364,6 +366,7 @@ export default function Carousel({
                 c33={content?.c33 ?? null}
                 c34={content?.c34 ?? null}
                 c35={content?.c35 ?? null}
+                url={content.url}
               />
             </div>
           ))}

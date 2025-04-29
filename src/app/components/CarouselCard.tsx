@@ -30,6 +30,7 @@ import {
   sparkleThree,
   sparkleTwo,
 } from '@/utils/assets';
+import Link from 'next/link';
 
 export default function CarouselCard({
   title,
@@ -73,6 +74,7 @@ export default function CarouselCard({
   c33,
   c34,
   c35,
+  url,
 }: carouselContentProps) {
   return (
     <div
@@ -103,18 +105,22 @@ export default function CarouselCard({
           )}
 
           {btnTitle && (
-            <button className='block md:hidden w-[100%] my-4 bg-white text-[#F71D3B] py-[12px] xl:py-2 px-6 rounded-[100px] font-[600] text-[14px] md:text-[24px] leading-[16px] md:leading-[36px]'>
-              {btnTitle}
-            </button>
+            <Link href={url} target='_blank'>
+              <button className='block md:hidden w-[100%] my-4 bg-white text-[#F71D3B] py-[12px] xl:py-2 px-6 rounded-[100px] font-[600] text-[14px] md:text-[24px] leading-[16px] md:leading-[36px]'>
+                {btnTitle}
+              </button>
+            </Link>
           )}
         </div>
 
         {btnTitle && (
-          <button
-            className={`${btnMaxWidth} hidden md:block md:mt-4 bg-white text-[#F71D3B] py-2 px-[36px] rounded-[100px] font-[600] text-[16px] xl:text-[24px] leading-[16px] xl:leading-[36px]`}
-          >
-            {btnTitle}
-          </button>
+          <Link href={url} target='_blank'>
+            <button
+              className={`${btnMaxWidth} hidden md:block md:mt-4 bg-white text-[#F71D3B] py-2 px-[36px] rounded-[100px] font-[600] text-[16px] xl:text-[24px] leading-[16px] xl:leading-[36px]`}
+            >
+              {btnTitle}
+            </button>
+          </Link>
         )}
       </div>
 
