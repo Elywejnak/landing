@@ -24,7 +24,7 @@ export default function SellingEffortlesslyCard() {
         <div className='mt-10'>
           <Link
             href={
-              'https://apps.apple.com/gb/app/paperclip-ai-marketplace/id990240447'
+              'https://pro.paperclip.co'
             }
             target='_blank'
           >

@@ -35,7 +35,7 @@ export default function LaunchPartnerOffer() {
         <div className='mt-10 mb-10 relative z-50 flex flex-row justify-center'>
           <Link
             href={
-              'https://apps.apple.com/gb/app/paperclip-ai-marketplace/id990240447'
+              'https://pro.paperclip.co'
             }
             target='_blank'
           >

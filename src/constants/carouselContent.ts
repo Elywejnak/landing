@@ -199,7 +199,7 @@ export const carouselContentTwo = [
     c29: true,
     c30: true,
     c31: true,
-    url: 'https://apps.apple.com/gb/app/paperclip-ai-marketplace/id990240447',
+    url: 'https://pro.paperclip.co',
   },
   {
     key: 2,
@@ -225,7 +225,7 @@ export const carouselContentTwo = [
       bottom: 0,
     },
     btnMaxWidth: 'max-w-[318px]',
-    url: 'https://apps.apple.com/gb/app/paperclip-ai-marketplace/id990240447',
+    url: 'https://pro.paperclip.co',
   },
   {
     key: 3,
@@ -255,7 +255,7 @@ export const carouselContentTwo = [
     c33: true,
     c34: true,
     c35: true,
-    url: 'https://apps.apple.com/gb/app/paperclip-ai-marketplace/id990240447',
+    url: 'https://pro.paperclip.co',
   },
   {
     key: 4,
@@ -281,7 +281,7 @@ export const carouselContentTwo = [
       bottom: 0,
     },
     btnMaxWidth: 'max-w-[330px]',
-    url: 'https://apps.apple.com/gb/app/paperclip-ai-marketplace/id990240447',
+    url: 'https://pro.paperclip.co',
   },
 ];
 

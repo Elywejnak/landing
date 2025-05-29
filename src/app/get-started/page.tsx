@@ -77,7 +77,7 @@ const GetStarted = () => {
         <button className='mb-[92px] max-w-[320px] mt-10 bg-gradient-to-l from-[#F71D3B] to-[#E14DE3] text-white py-3 px-6 rounded-[100px] font-[600] font-poppins text-[16px] md:text-[24px] leading-[24px] md:leading-[36px] xl:w-[30%]'>
           <Link
             href={
-              'https://apps.apple.com/gb/app/paperclip-ai-marketplace/id990240447'
+              'https://pro.paperclip.co'
             }
             target='_blank'
             className='w-full'
@@ -379,7 +379,7 @@ const GetStarted = () => {
         </p>
         <Link
           href={
-            'https://apps.apple.com/gb/app/paperclip-ai-marketplace/id990240447'
+            'https://pro.paperclip.co'
           }
           target='_blank'
         >
@@ -455,7 +455,7 @@ const GetStarted = () => {
           </p>
           <Link
             href={
-              'https://apps.apple.com/gb/app/paperclip-ai-marketplace/id990240447'
+              'https://pro.paperclip.co'
             }
             target='_blank'
           >
